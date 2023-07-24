@@ -1,0 +1,14 @@
+﻿@page "/songsinforedirect/{SongId:int}/{SongName}"
+
+@code {
+    [Parameter]
+    public int SongId { get; set; } = 1;
+
+    [Parameter]
+    public string SongName { get; set; } = null;
+
+    protected override void OnInitialized()
+    {
+        this.NavigationManager.NavigateTo($"/songs/{this.SongId}/{this.SongName}");
+    }
+}
