@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'totob12-music'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4811C462501A485AA9DACE8703DC94A7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0B177F8B3841482799175358EDCE4B88 }}
           package: .
