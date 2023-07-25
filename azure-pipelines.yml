@@ -27,8 +27,3 @@ steps:
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-resources:
-  pipelines:
-  - pipeline: music # identifier for the resource (used in pipeline resource variables)
-    source: music # name of the pipeline that produces an artifact
