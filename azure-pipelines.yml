@@ -31,6 +31,6 @@ steps:
 - task: AzureCLI@2
   displayName: 'Azure Web App Deploy'
   inputs:
-    azureSubscription: 'Azure for Students Starter'  # Replace with the name of your Azure service connection in Azure DevOps.
+    azureSubscription: '70bb2bce-cc3f-4f57-8199-94bb88eb3874'  # Replace with the name of your Azure service connection in Azure DevOps.
     appName: 'music'  # Replace with the name of your Azure Web App.
     package: '$(build.artifactStagingDirectory)/**/*.zip'
